@@ -8,13 +8,13 @@
   <title>Ecommerce Website</title>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="./chat.css">
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/chat.css">
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 
 <body>
   <section id="header">
-    <a href="#"><img src="./img/logo.png" class="logo" alt="" /></a>
+    <a href="./index.html"><img src="./img/logo.png" class="logo" alt="" /></a>
     <div>
       <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
@@ -344,13 +344,13 @@
   </section>
 
   <section id="sm-banner" class="section-p1">
-    <div class="banner-box" style="background-image:url(./img/banner/b10.jpg);">
+    <div class="banner-box" style="background-image:url(./img/nner/nner10.jpg);">
       <h4>crazy deals</h4>
       <h2>buy 1 get 1 free</h2>
       <span>The best classic dress is on sale at cara</span>
       <button class="white">Learn More</button>
     </div>
-    <div class="banner-box banner-box2" style="background-image:url(./img/banner/b17.jpg);">
+    <div class="banner-box banner-box2" style="background-image:url(./img/nner/nner17.jpg);">
       <h4>spring/summer</h4>
       <h2>upcoming season</h2>
       <span>The best classic dress is on sale at cara</span>
@@ -365,7 +365,9 @@
     </div>
     <div class="banner-box banner-box2">
       <h2>NEW FOOTWEAR COLLECTION</h2>
-      <h3>Spring / Summer 2022</h3>
+      <h3>Spring / Summer <script>
+        document.write(new Date().getFullYear())
+    </script></h3>
     </div>
     <div class="banner-box banner-box3">
       <h2>T-SHIRTS</h2>
@@ -434,14 +436,16 @@
       <img src="./img/pay/pay.png" alt="" />
     </div>
     <div class="copyright">
-      <p>2022, Tech2 etc - HTML CSS Ecommerce Template</p>
+      <p><script>
+        document.write(new Date().getFullYear())
+    </script>, Tech2 etc - HTML CSS Ecommerce Template</p>
     </div>
   </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./main.js"></script>
-  <script src="./chat.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/chat.js"></script>
 </body>
 
 </html>
